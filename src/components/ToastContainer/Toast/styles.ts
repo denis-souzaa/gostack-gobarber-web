@@ -21,7 +21,7 @@ const toastTypesVariations = {
 
 interface ContainerProps {
   type?:'success' | 'error' | 'info';
-  hasDescription: boolean;
+  hasdescription: number;
 }
 export const Container = styled(animated.div)<ContainerProps>`
   width:360px;
@@ -64,7 +64,7 @@ export const Container = styled(animated.div)<ContainerProps>`
     color: inherit;
   }
 
-  ${(props) => !props.hasDescription && css`
+  ${(props) => !props.hasdescription && css`
     align-items:center;
 
     svg {
